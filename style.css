@@ -1,5 +1,27 @@
-@import url(https://fonts.google.com/specimen/Inter);
-@import url(https://fonts.google.com/specimen/Lexend+Deca);
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  /* 3. Add accessible line-height */
+  line-height:1.5;
+  
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
 
 
 :root{
@@ -30,50 +52,77 @@ body{
 
 .wrapper{
     background-color: var(--clr-Dark_desaturated_blue);
-    margin:2rem;
+    margin:1.5rem;
+    border-radius:10px;
+    
+    
 }
 
 
 .image_box{
     max-width:100%;
     background-color: var(--clr-Soft_violet);
+    
 }
+
+
 
 img{
-    width:100%;
     opacity:0.6;
-    display: block;
+    
 }
 
+.business_content{
+    padding:2rem 1rem 0rem 1rem;
+}
 .business__txt{
     text-align: center;
-    margin: 2rem;
-    
-
 }
 
 .business_content__quote{
-    color:var(--clr-White)
+    color:var(--clr-White);
+    font-size:2rem;
+    line-height: 1.2; 
     
+}
+
+/* .business_content__services{
+    max-width:18.75rem;
+    
+} */
+
+.txt-padding-bottom{
+    padding-bottom: 1.25rem;
 }
 
 .insight{
     color: var(--clr-Soft_violet);
 }
 
+.network{
+    padding-top:1.6rem;
+}
+
 
 .network li{
     list-style:none;
-    margin-bottom:2rem;
+    padding-bottom:1.8rem;
+}
+
+.network li p:nth-child(1){
+    color:var(--clr-White);
+    font-weight:700;
+    font-size:1.4rem;
+
 }
 
 li h1{
     font-size:1.500rem;
-    margin-bottom:0.313rem;
+    /* margin-bottom:0.313rem; */
 }
 
 .business_content__services{
-    font-size: 15px;
+    font-size: 0.938rem;
 }
 
 li h1{
@@ -90,40 +139,35 @@ li p span{
 
 }
 
-@media screen and  (min-width:400px){
+ @media screen and  (min-width:450px){
     .wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        max-width:800px;
+        display:flex;
+        flex-direction:row-reverse;
+        max-width:50rem;
         place-content:center;
+        
     }
 
     .business__txt{
         text-align:left ;
     }
 
-    .network li{
-        list-style:none;
-        margin-bottom:2rem;
-    }
+   
 
     .network{
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .business_content{
-        padding: 1.25rem;
+        padding: 4rem 4rem 2.5rem 4rem;
     }
 
     li{
         flex-grow: 2;
     }
 
-    img {
-        width: 100%;
-        opacity: 0.6;
-        display: block;
-    }   
+ 
     
-}
+} */

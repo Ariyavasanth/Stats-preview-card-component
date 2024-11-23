@@ -3,55 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
   <link rel = "stylesheet" href = "style.css">
+
 
  
 </head>
 <body>
-  <div class = "wrapper">
+  <main class = "wrapper">
 
-    <div class = "image_box">
-    <picture>
-      <source media="(min-width: 400px)" srcset = "images/image-header-desktop.jpg"  alt="people-Image-desktop">
-      
-      <img src = "images/image-header-mobile.jpg" alt = "people-Image-mobile">
-    </picture>
-    </div>
+    <section class="image_box">
+      <picture>
+        <!-- Desktop Image -->
+        <source media="(min-width: 400px)" srcset="./images/image-header-desktop.jpg">
+        <!-- Fallback to Mobile Image -->
+        <img src="images/image-header-mobile.jpg" alt="People working together">
+      </picture>
+    </section>
     
 
-    <div class = "business_content">
-      <h1 class = "business_content__quote business__txt">Get <span class = "insight">insights</span> that help your business grow.</h1>
-
-      <p class = "business_content__services business__txt">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+    <section class = "business_content">
+      <h1 class = "business_content__quote txt-padding-bottom business__txt">Get <span class = "insight">insights</span> that help your business grow.</h1>
+      <p class = "business_content__services txt-padding-bottom business__txt">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
         experience, and overall efficiency.</p>
 
       <div class="business_content__network business__txt">
         <ul class="network">
           <li>
-            <h1>10k+</h1>
+            <p>10k+</p>
             <p><span>COMPANIES</span></p>
           </li>
 
           <li>
-            <h1>314k+</h1>
+            <p>314k+</p>
             <p><span>TEMPLATE</span></p>
           </li>
 
           <li>
-            <h1>10k+</h1>
+            <p>10k+</p>
             <p><span>QUERIES</span></p>
           </li>
         </ul>
       </div>
-    </div>
 
-    
+    </section>
 
-  </div>
+  </main>
 
 </body>
 </html>
