@@ -126,16 +126,25 @@ li p span{
     .wrapper{
         display:flex;
         flex-direction:row-reverse;
-        max-width:50rem;
+        max-width:60rem;
         place-content:center;
+        max-height: 25rem;
+        
+    }
+
+    .image_box{
+        /* width:1500px; */
+        /* flex-basis: 100%; */
+        
+    }
+
+    img{
+      
     }
 
     .business__txt{
         text-align:left ;
     }
-
-   
-
     .network{
         display: flex;
         justify-content: center;
@@ -143,7 +152,7 @@ li p span{
     }
 
     .business_content{
-        padding: 4rem 4rem 2.5rem 4rem;
+        padding: 5rem 5rem 4rem 5rem;
     }
 
     li{
