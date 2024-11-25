@@ -130,6 +130,7 @@
 
 
 
+
 @media screen and  (min-width:45rem){
     .wrapper{
         display: grid;
@@ -160,14 +161,21 @@
     }
 
     .business_content__services{
-        /* width:300px; */
+        
         text-align: left;
     }
 
     .business_content__network{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        
+        /* justify-items:space-around;
+        align-items:space-arround; */
+    }
+
+    .business_content__network li{
+        display: flex;
+        flex-direction: column;
+        align-items: space-evenly;
     }
 
     li{
